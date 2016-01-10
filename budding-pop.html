@@ -13,103 +13,75 @@
         padding: 0;
         margin: 0;
     }
-    #template{
-        display: none;
-        position: absolute;
-        z-index: -2;
-        -webkit-transform: rotate(6deg);
-        -ms-transform:     rotate(6deg);
-        -o-transform:      rotate(6deg);
-        transform:         rotate(6deg);
-        opacity: 0.5;
-    }
-    #cao{
-        display: none;
-        position: absolute;
-        z-index: -1;
-        left: 50%;
-        width: 80px;
-        margin-left: -23px;
-        top: 70px;
-        opacity: .5;
-        -webkit-transform: rotate(6deg);
-    }
     </style>
 </head>
 <body>
-    <img id="template" src="pop.jpg">
-    <img id="cao" src="cao.jpg">
-    <!-- <div class="squiggle-animated">
-        <svg xmlns="http://www.w3.org/2000/svg" height="98" width="581" viewBox="0 0 581 98"><path d="M62.9 14.9c-25-7.74-56.6 4.8-60.4 24.3-3.73 19.6 21.6 35 39.6 37.6 42.8 6.2 72.9-53.4 116-58.9 65-18.2 191 101 215 28.8 5-16.7-7-49.1-34-44-34 11.5-31 46.5-14 69.3 9.38 12.6 24.2 20.6 39.8 22.9 91.4 9.05 102-98.9 176-86.7 18.8 3.81 33 17.3 36.7 34.6 2.01 10.2.124 21.1-5.18 30.1" stroke="#000" stroke-width="4.3" fill="none"></path></svg>
-    </div> -->
-
-<div class="squiggle-animated">
-<!-- <DIV> -->
-    <svg xmlns="http://www.w3.org/2000/svg" height="640" width="360" viewBox="0 0 360 640">
-    <!-- 头圆弧 -->
-    <path stroke="#793D2E" stroke-width="5" fill="none" d="
-    M 138 306
-    C 100 295, 81 250, 81 220
-    C 81 170, 120 120, 185 124
-    C 245 120, 287 170, 287 220
-    C 287 240, 280 290, 240 300"></path>
-    <!-- 左眼 -->
-    <path stroke="#793D2E" stroke-width="4" fill="none" d="
-    M136 210
-    A10 12, 0, 0, 0, 156 210
-    A10 12, 0, 0, 0, 136 210" class="eye"></path>
-    <!-- 鼻子 -->
-    <path stroke="#793D2E"  stroke-width="4" fill="none" d="
-    M176 210
-    C 164 230, 185 234, 188 215
-    C 192 233, 214 230, 204 212"></path>
-    <!-- 右眼 -->
-    <path stroke="#793D2E" stroke-width="4" fill="none" d="
-    M222 210
-    A10 12, 0, 0, 0, 242 210
-    A10 12, 0, 0, 0, 222 210" class="eye"></path>
-    <!-- 叶子 -->
-    <path stroke="#793D2E" stroke-width="4" fill="none" d="
-    M 189 122
-    Q 189 88, 219 85
-    Q 234 86, 224 104
-    Q 213 116, 192 109
-    Q 173 108, 167 92
-    Q 165 70, 184 83
-    Q 193 93, 192 109" class="leaf"></path>
-    <!-- 脸 -->
-    <path stroke="#793D2E" stroke-width="4" fill="none" d="M 131 233 L127 243"></path>
-    <path stroke="#793D2E" stroke-width="4" fill="none" d="M 142 233 L138 243"></path>
-    <path stroke="#793D2E" stroke-width="4" fill="none" d="M 242 233 L238 243"></path>
-    <path stroke="#793D2E" stroke-width="4" fill="none" d="M 253 233 L249 243"></path>
-    <!-- 手 -->
-    <path stroke="#793D2E" stroke-width="4" fill="none" d="M 138 305 C 88 370, 153 350, 153 330 S 128 340, 135 330"></path>
-    <path stroke="#793D2E" stroke-width="4" fill="none" d="M 240 300 C 290 375, 225 350, 225 330 S 250 340, 243 330"></path>
-    <!-- 身体 -->
-    <path stroke="#793D2E" stroke-width="4" fill="none" d="
-    M 139 347 L 134 400
-    C 130 430, 164 440, 156 405
-    "></path>
-    <path stroke="#793D2E" stroke-width="4" fill="none" d="
-    M 152 403 Q 194 414, 235 402
-    "></path>
-    <path stroke="#793D2E" stroke-width="4" fill="none" d="
-    M 228 404 C 228 440, 250 430, 250 400
-    L 248 350
-    "></path>
-    <!-- 团子 -->
-    <path stroke="#793D2E" stroke-width="4" fill="none"
-        d="M 147 325 C 150 270, 230 270, 233 325"></path>
-    <path stroke="#793D2E" stroke-width="4" fill="none"
-        d="M 152 337 C 155 360, 210 360, 226 335"></path>
-    <path stroke="#793D2E" stroke-width="5" fill="none"
-        d="M 167 310 L 171 318"></path>
-    <path stroke="#793D2E" stroke-width="5" fill="none"
-        d="M 194 308 L 198 316"></path>
-    <path stroke="#793D2E" stroke-width="5" fill="none"
-        d="M 216 346 L 224 354"></path>
-    </svg>
-</div>
+    <div class="squiggle-animated">
+        <svg xmlns="http://www.w3.org/2000/svg" height="640" width="360" viewBox="0 0 360 640">
+        <!-- 头圆弧 -->
+        <path stroke="#793D2E" stroke-width="5" fill="none" d="
+        M 138 306
+        C 100 295, 81 250, 81 220
+        C 81 170, 120 120, 185 124
+        C 245 120, 287 170, 287 220
+        C 287 240, 280 290, 240 300"></path>
+        <!-- 左眼 -->
+        <path stroke="#793D2E" stroke-width="4" fill="none" d="
+        M136 210
+        A10 12, 0, 0, 0, 156 210
+        A10 12, 0, 0, 0, 136 210" class="eye"></path>
+        <!-- 鼻子 -->
+        <path stroke="#793D2E"  stroke-width="4" fill="none" d="
+        M176 210
+        C 164 230, 185 234, 188 215
+        C 192 233, 214 230, 204 212"></path>
+        <!-- 右眼 -->
+        <path stroke="#793D2E" stroke-width="4" fill="none" d="
+        M222 210
+        A10 12, 0, 0, 0, 242 210
+        A10 12, 0, 0, 0, 222 210" class="eye"></path>
+        <!-- 叶子 -->
+        <path stroke="#793D2E" stroke-width="4" fill="none" d="
+        M 189 122
+        Q 189 88, 219 85
+        Q 234 86, 224 104
+        Q 213 116, 192 109
+        Q 173 108, 167 92
+        Q 165 70, 184 83
+        Q 193 93, 192 109" class="leaf"></path>
+        <!-- 脸 -->
+        <path stroke="#793D2E" stroke-width="4" fill="none" d="M 131 233 L127 243"></path>
+        <path stroke="#793D2E" stroke-width="4" fill="none" d="M 142 233 L138 243"></path>
+        <path stroke="#793D2E" stroke-width="4" fill="none" d="M 242 233 L238 243"></path>
+        <path stroke="#793D2E" stroke-width="4" fill="none" d="M 253 233 L249 243"></path>
+        <!-- 手 -->
+        <path stroke="#793D2E" stroke-width="4" fill="none" d="M 138 305 C 88 370, 153 350, 153 330 S 128 340, 135 330"></path>
+        <path stroke="#793D2E" stroke-width="4" fill="none" d="M 240 300 C 290 375, 225 350, 225 330 S 250 340, 243 330"></path>
+        <!-- 身体 -->
+        <path stroke="#793D2E" stroke-width="4" fill="none" d="
+        M 139 347 L 134 400
+        C 130 430, 164 440, 156 405
+        "></path>
+        <path stroke="#793D2E" stroke-width="4" fill="none" d="
+        M 152 403 Q 194 414, 235 402
+        "></path>
+        <path stroke="#793D2E" stroke-width="4" fill="none" d="
+        M 228 404 C 228 440, 250 430, 250 400
+        L 248 350
+        "></path>
+        <!-- 团子 -->
+        <path stroke="#793D2E" stroke-width="4" fill="none"
+            d="M 147 325 C 150 270, 230 270, 233 325"></path>
+        <path stroke="#793D2E" stroke-width="4" fill="none"
+            d="M 152 337 C 155 360, 210 360, 226 335"></path>
+        <path stroke="#793D2E" stroke-width="5" fill="none"
+            d="M 167 310 L 171 318"></path>
+        <path stroke="#793D2E" stroke-width="5" fill="none"
+            d="M 194 308 L 198 316"></path>
+        <path stroke="#793D2E" stroke-width="5" fill="none"
+            d="M 216 346 L 224 354"></path>
+        </svg>
+    </div>
 
     <script>
     var paths = document.querySelectorAll('.squiggle-animated path');
@@ -126,8 +98,8 @@
         var durationSecond = Math.floor(length / 100) * 0.28 + 0.65;
 
         // Clear any previous transition
-        path.style.transition = path.style.WebkitTransition =
-          'none';
+        path.style.transition = path.style.WebkitTransition = 'none';
+        path.style.transform = path.style.WebkitTransform = 'translate3d(0, 0, 0)';
         // Set up the starting positions
         path.style.strokeDasharray = length + ' ' + length;
         path.style.strokeDashoffset = length;
